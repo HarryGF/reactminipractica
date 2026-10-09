@@ -18,7 +18,9 @@ root.render(
     <Router/>
     */}
     <h1>Index Principal</h1>
+    <hr/>
     <MenuRutas/>
+    <hr/>
     <Router/>
   </React.StrictMode>
 );

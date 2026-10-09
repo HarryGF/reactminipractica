@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import './MenuRutas.css'
 
 export default class extends Component {
     render() {
         return (
-        <div>
+        <div id='menu'>
             <ul>
                 <li>
                     <a href="/">Home</a>
