@@ -13,15 +13,11 @@ export default class DoctoresEspecialidad extends Component {
     }
 
     loadEspecialidades = () => {
-        let request = "/api/doctores"
+        let request = "/api/doctores/especialidades"
         axios.get(this.urlDoctores + request).then((response) => {
             console.log("Leyendo especialidades")
-            let aux = new Set([])
-            for (let elem of response.data) {
-                aux.add(elem.especialidad)
-            }
             this.setState({
-                especialidades: Array.from(aux)
+                especialidades: response.data
             })
         })
     }
